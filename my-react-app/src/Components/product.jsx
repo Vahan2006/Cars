@@ -1,4 +1,4 @@
-import "../product.css";
+import "../style/product.css";
 
 function product( {data} ) {
     return (
@@ -7,15 +7,14 @@ function product( {data} ) {
             return (
               <div className="product-root" key={index}>
                 <div className="product">
-                  <img src="/cars/goodPic.jpg" alt="car" />
+                  <img class = "img-product" src="/cars/goodPic.jpg" alt="car" />
                 </div>
                 <h3>{data[index].name}</h3>
               </div>
             );
           })}
         </div>
-      );
-      
+      );   
 }
 
 export default product;

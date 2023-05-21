@@ -1,15 +1,16 @@
 import React from 'react';
-import "../index.css";
 import Header from "../Components/header";
 import PicBack from "../Components/pickBack";
 import Products from '../Components/product';
+import ProductData from '../ProductData/productData';
 
 function products() {
+  console.log(<ProductData/>)
   return (
     <React.StrictMode>
       <Header/>
       <PicBack name = "Products"/>
-      <Products data = {[{"name":"Car1"}, {"name":"Car2"} ]}/>
+      <Products data = {ProductData}/>
     </React.StrictMode>
   );
 }
